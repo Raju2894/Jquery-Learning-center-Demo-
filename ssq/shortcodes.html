@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<title>Shortcodes | Porto - Responsive HTML5 Template - 2.9.0</title>
+		<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" content="Porto - Responsive HTML5 Template - 2.9.0">
+		<meta name="author" content="okler.net">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Libs CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.css" media="screen">
+		<link rel="stylesheet" href="vendor/owl-carousel/owl.theme.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-animate.css">
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/blue.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="css/theme-responsive.css" />
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr.js"></script>
+
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+	<style>
+	/* custom inclusion of right, left and below tabs */
+
+.tabs-below > .nav-tabs,
+.tabs-right > .nav-tabs,
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.tabs-below > .nav-tabs {
+  border-top: 1px solid #ddd;
+}
+
+.tabs-below > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+
+.tabs-below > .nav-tabs > li > a {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+.tabs-below > .nav-tabs > li > a:hover,
+.tabs-below > .nav-tabs > li > a:focus {
+  border-top-color: #ddd;
+  border-bottom-color: transparent;
+}
+
+.tabs-below > .nav-tabs > .active > a,
+.tabs-below > .nav-tabs > .active > a:hover,
+.tabs-below > .nav-tabs > .active > a:focus {
+  border-color: transparent #ddd #ddd #ddd;
+}
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+
+.tabs-right > .nav-tabs {
+  float: right;
+  margin-left: 19px;
+  border-left: 1px solid #ddd;
+}
+
+.tabs-right > .nav-tabs > li > a {
+  margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.tabs-right > .nav-tabs > li > a:hover,
+.tabs-right > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+}
+
+.tabs-right > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a:hover,
+.tabs-right > .nav-tabs .active > a:focus {
+  border-color: #ddd #ddd #ddd transparent;
+  *border-left-color: #ffffff;
+}
+
+    </style>
+
+	</head>
+	<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#hi1').hide();
+	$('#hi2').hide();
+  $("#2").click(function(){
+	$('#hi1').show();
+	$('#hi').hide();
+	$('#21').show();
+	$('#hi2').hide();
+	$('#11').hide();
+	$('#31').hide();
+	$('#rest').hide();
+   
+  });
+ $("#1").click(function(){
+	$('#hi1').hide();
+	$('#21').hide();
+	$('#hi').show();
+	$('#hi2').hide();
+	$('#11').show();
+	$('#31').hide();
+	$('#rest').show();
+});
+$("#3").click(function(){
+	$('#21').hide();
+	$('#hi1').show();
+	$('#hi2').show();
+	$('#hi').hide();
+	$('#31').show();
+	$('#11').hide();
+	$('#rest').hide();
+	
+	
+});
+
+
+});
+</script>
+<br><br>
+<div class="container">
+  <div class="col-md-12">
+		
+     <div class="col-md-8"><h3>Tabs -right</h3>
+          	
+      <!-- tabs right -->
+      <div class="tabbable tabs-right">
+        <ul class="nav nav-tabs">
+          <li class="active" id="1"><a href="#1" data-toggle="tab">Watch</a></li>
+          <li id="2"><a href="#2" data-toggle="tab">Learn More</a></li>
+          <li id="3"><a href="#3" data-toggle="tab">Add to Workout</a></li>
+        </ul>
+        <div class="tab-content">
+
+         <div class="tab-pane active" id="11">
+		
+	<div class="col-md-6" id="hi">
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div>
+	</div>
+         <div class="tab-pane" id="21">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+         Aliquam in felis sit amet augue.</div>
+         <div class="tab-pane" id="31">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+         Quisque mauris augue, molestie tincidunt condimentum vitae. </div>
+        </div>
+
+      </div>
+      <!-- /tabs -->
+
+      </div>
+<div class="col-md-4" id="hi1">
+					
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div>
+   
+</div>
+</div>  
+  <div class="col-md-12">
+<div class="col-md-8"></div>
+  <div class="col-md-4">
+	<div class="owl-item" style="width: 274px; border-style: solid;" id="hi2"><div style="align:center;">
+														<p> heyyy  add to workout div</p>
+													</div></div></div>
+
+<hr><hr class="tall">
+
+							
+
+							<div class="owl-carousel" data-plugin-options='{"items": 3, "singleItem": false, "navigation": true, "pagination": false}' id="rest">
+								<div>
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div>
+								<div>
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div>
+								<div>
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div>
+								<div>
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div><div>
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div>
+								<div>
+<h2>YouTube</h2>
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div>
+								<div>
+<h2>YouTube</h2>
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div>
+								<div>
+<h2>YouTube</h2>
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div>
+								<div>
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div>
+								<div>
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div>
+								<div>
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div>
+								<div>
+							<div class="video-container youtube">
+								<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+							</div>
+						</div>
+							</div>
+						</div>
+					</div>
+
+					
+
+<hr >
+
+								
+
+		<!-- Libs -->
+		<script src="vendor/jquery.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="vendor/jquery.easing.js"></script>
+		<script src="vendor/jquery.appear.js"></script>
+		<script src="vendor/jquery.cookie.js"></script>
+		
+		<script src="vendor/bootstrap.js"></script>
+		<script src="vendor/twitterjs/twitter.js"></script>
+		<script src="vendor/owl-carousel/owl.carousel.js"></script>
+		<script src="vendor/jflickrfeed/jflickrfeed.js"></script>
+		<script src="vendor/magnific-popup/magnific-popup.js"></script>
+		<script src="vendor/jquery.knob.js"></script>
+		<script src="vendor/jquery.validate.js"></script>
+
+		<!-- Theme Initializer -->
+		<script src="js/theme.js"></script>
+
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+
+		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-12345678-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+		 -->
+
+	</body>
+</html>

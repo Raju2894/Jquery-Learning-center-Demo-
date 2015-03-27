@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Opperman Weiss</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no">
+		
+		<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<link href='http://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/core.css">
+		<link rel="stylesheet" href="css/new-index-style.css">
+		<link rel="stylesheet" href="css/awwards.css">
+		<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-1.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"516102e2a5","applicationID":"56389","transactionName":"elxcRUVfVVwBSxYSV0taV0IYWVdUAUE=","queueTime":0,"applicationTime":176,"agent":"js-agent.newrelic.com/nr-476.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQYFUFFXGwYGV1lb"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(u){"stack"in u&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:18,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:18,2:19,ee:"QJf3ax",gos:"7eSDFh"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:19,2:18,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:19,2:18,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),u=s(a),f=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new f(t);try{i.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=f.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:19,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=e(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var f=0;c>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:9,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,u="addEventListener",f="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[u]?(c[u]("DOMContentLoaded",o,!1),s[u]("load",n,!1)):(c[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],18:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],19:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:18,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+    <meta content="Use engaging videos on TED-Ed to create customized lessons. You can use, tweak, or completely redo any lesson featured on TED-Ed, or create lessons from scratch based on any video from YouTube." name="description" />
+    <meta content="Series | TED-Ed" property="og:title" />
+    <meta content="http://ed.ted.com/series" property="og:url" />
+    <meta content="Use engaging videos on TED-Ed to create customized lessons. You can use, tweak, or completely redo any lesson featured on TED-Ed, or create lessons from scratch based on any video from YouTube." property="og:description" />
+    <meta content="TED-Ed" property="og:site" /><meta content="authenticity_token" name="csrf-param" />
+    <meta content="DEAKE5qdwkMEF2zUeQ3qCYepU6OF/mr5NF1E2QvuRSU=" name="csrf-token" />
+    <meta content="on" http-equiv="cleartype">
+    <link href="css1/application.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css1/ui.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css1/wrapper.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css1/lessons.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css1/on.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css1/pages.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css1/notifications.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css1/responsive.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="css1/modrenizer.js" type="text/javascript">
+  </script>
+	</head>
+	<body class="black">
+	
+    	<div id="notSupported"></div>
+		<div id="preloader">
+
+		</div>
+
+		<div class="menu-bar none">
+			<div class="logo"><img src="img/logo.png" alt="Opperman Weiss"></div>
+			<div class="menu">
+				<div class="three-line"></div>
+			</div>
+		</div>
+
+		<div class="dim-box"></div>
+
+		<div class="wrapper down white"> <!-- Start Page Wrapper -->
+		<div class="seriesLayout seriesIndexView ">
+    <!--[if lt IE 8]>
+    <p class="chromeframe">
+      Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.
+    </p>
+    <![endif]-->
+
+    
+    <section class="find-and-flip">
+      <div class="masthead">
+        <div class="top-wash"></div>
+        <div class="container">
+          <div class="bottom-wash"></div>
+          <div class="row-fluid">
+            <div class="span12 text-center">
+              <h2 class="text-ultralight inverse text-shadowed">
+                Build a lesson on Natyam 
+              </h2>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span12 text-center">
+              <h2><a href="/videos">
+                          Create a Lesson<i class="icon icon-drawn-plus"></i></a>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><div id="bodyWrapper">
+      <div>
+        <div class="container">
+          <div class="row-fluid">
+            <div id="gridWrapper">
+              <div class="grid-container" id="gridContainer">
+                <div class="gridCell col2 short videoCount10 videoCountShort sponsored" data-hash="periodic-videos" data-title="Periodic Videos" data-url="lesson.html" id="series_256">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Periodic Videos
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>118 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint">
+                        <img alt="Pm8wbfnmmgddyr9etfyt" class="sponsored-image col2 img-adaptive" src="assets/pm8wbfnmmgddyr9etfyt.gif" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Periodic Videos
+                        </div>
+                        <div class="expandedBackground">
+                          <img alt="Pm8wbfnmmgddyr9etfyt" class="img-adaptive" src="assets/pm8wbfnmmgddyr9etfyt.gif" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="ssq/shortcodes.html" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 118 Lessons)</span><span class="showing-eight">(Showing 8 of 118 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col2 short videoCount6 videoCountLong " data-hash="superhero-science" data-title="Superhero Science" data-url="/series/superhero-science?ajax=true" id="series_254">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Superhero Science
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>6 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Yellow_hover_col1" class="col1" src="assets/yellow_hover_col1-49ce94ed996b0e9ca3bdc1b5ef9825c5.png" style="width: 100%; margin-top: 0;" /><img alt="Yellow_hover_col2" class="col2" src="assets/yellow_hover_col2-5919f1581f7063b4f71a5a62c076bc97.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Superhero Science
+                        </div>
+                        <div class="expandedBackground"><img alt="Yellow_expanded" src="assets/yellow_expanded-c95452a9a97555745f95d7f9b3a3be8c.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col2 short videoCount10 videoCountShort " data-hash="inventions-that-shape-history" data-title="Inventions that Shape History" data-url="/series/inventions-that-shape-history?ajax=true" id="series_11">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Inventions that Shape History
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>29 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Inventions-that-shape-history_hover_col1" class="col1" src="assets/inventions-that-shape-history_hover_col1-ebc3ae62177efb2b6b0ba378cb4a390c.png" style="width: 100%; margin-top: 0;" /><img alt="Inventions-that-shape-history_hover_col2" class="col2" src="assets/inventions-that-shape-history_hover_col2-3dc6e6e6ce4e33f07f5648d45160a37b.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Inventions that Shape History
+                        </div>
+                        <div class="expandedBackground"><img alt="Inventions-that-shape-history_expanded" src="assets/inventions-that-shape-history_expanded-e14f76c290ca44f6b26cec9fac44f35d.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/inventions-that-shape-history" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 29 Lessons)</span><span class="showing-eight">(Showing 8 of 29 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="the-way-we-think" data-title="The Way We Think" data-url="/series/the-way-we-think?ajax=true" id="series_121">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      The Way We Think
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>37 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="The-way-we-think_hover_col1" class="col1" src="assets/the-way-we-think_hover_col1-1c1373c4d98cffae696087f82bbf875f.png" style="width: 100%; margin-top: 0;" /><img alt="The-way-we-think_hover_col2" class="col2" src="assets/the-way-we-think_hover_col2-34c344ca569aba0af261d08393047862.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          The Way We Think
+                        </div>
+                        <div class="expandedBackground"><img alt="The-way-we-think_expanded" src="assets/the-way-we-think_expanded-46ff20409e9d747fcb2edf51c4793392.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/the-way-we-think" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 37 Lessons)</span><span class="showing-eight">(Showing 8 of 37 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount1 videoCountSingleLong " data-hash="ecofying-cities" data-title="Ecofying Cities" data-url="/series/ecofying-cities?ajax=true" id="series_71">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Ecofying Cities
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>1 video</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Ecofying-cities_hover_col1" class="col1" src="assets/ecofying-cities_hover_col1-9d862f486beaba9093c735d9e3e62dd7.png" style="width: 100%; margin-top: 0;" /><img alt="Ecofying-cities_hover_col2" class="col2" src="assets/ecofying-cities_hover_col2-80ce15d36ab319e5047d7cbf3eb8563b.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Ecofying Cities
+                        </div>
+                        <div class="expandedBackground"><img alt="Ecofying-cities_expanded" src="assets/ecofying-cities_expanded-44527c6c8dfc58eda032ab6a91d93bb2.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount1 videoCountSingleLong " data-hash="mastering-tech-artistry" data-title="Mastering Tech Artistry" data-url="/series/mastering-tech-artistry?ajax=true" id="series_171">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Mastering Tech Artistry
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>1 video</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Mastering-tech-artistry_hover_col1" class="col1" src="assets/mastering-tech-artistry_hover_col1-1c1373c4d98cffae696087f82bbf875f.png" style="width: 100%; margin-top: 0;" /><img alt="Mastering-tech-artistry_hover_col2" class="col2" src="assets/mastering-tech-artistry_hover_col2-34c344ca569aba0af261d08393047862.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Mastering Tech Artistry
+                        </div>
+                        <div class="expandedBackground"><img alt="Mastering-tech-artistry_expanded" src="assets/mastering-tech-artistry_expanded-46ff20409e9d747fcb2edf51c4793392.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col2 long videoCount3 videoCountSingleLong " data-hash="questions-no-one-yet-knows-the-answers-to" data-title="Questions No One (Yet) Knows the Answers To" data-url="/series/questions-no-one-yet-knows-the-answers-to?ajax=true" id="series_21">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Questions No One (Yet) Knows the Answers To
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>3 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Questions-no-one-yet-knows-the-answers-to_hover_col1" class="col1" src="assets/questions-no-one-yet-knows-the-answers-to_hover_col1-09cc3085417cdb588e623dcd3e48c7b0.png" style="width: 100%; margin-top: 0;" /><img alt="Questions-no-one-yet-knows-the-answers-to_hover_col2" class="col2" src="assets/questions-no-one-yet-knows-the-answers-to_hover_col2-585a4b39b3c68a67cac17f1f57f2887e.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Questions No One (Yet) Knows the Answers To
+                        </div>
+                        <div class="expandedBackground"><img alt="Questions-no-one-yet-knows-the-answers-to_expanded" src="assets/questions-no-one-yet-knows-the-answers-to_expanded-021c18add1990f514dfe14ee8d38344f.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount7 videoCount " data-hash="visualizing-data" data-title="Visualizing Data" data-url="/series/visualizing-data?ajax=true" id="series_131">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Visualizing Data
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>7 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Visualizing-data_hover_col1" class="col1" src="assets/visualizing-data_hover_col1-19e6c78099b17f8cd81da7471600359e.png" style="width: 100%; margin-top: 0;" /><img alt="Visualizing-data_hover_col2" class="col2" src="assets/visualizing-data_hover_col2-d97d458efd656b369f6808af8e3860b6.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Visualizing Data
+                        </div>
+                        <div class="expandedBackground"><img alt="Visualizing-data_expanded" src="assets/visualizing-data_expanded-e5f1f28fbb622f91992894b5e4219eb3.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="math-in-real-life" data-title="Math in Real Life" data-url="/series/math-in-real-life?ajax=true" id="series_111">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Math in Real Life
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>46 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Math-in-real-life_hover_col1" class="col1" src="assets/math-in-real-life_hover_col1-19e6c78099b17f8cd81da7471600359e.png" style="width: 100%; margin-top: 0;" /><img alt="Math-in-real-life_hover_col2" class="col2" src="assets/math-in-real-life_hover_col2-d97d458efd656b369f6808af8e3860b6.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Math in Real Life
+                        </div>
+                        <div class="expandedBackground"><img alt="Math-in-real-life_expanded" src="assets/math-in-real-life_expanded-e5f1f28fbb622f91992894b5e4219eb3.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/math-in-real-life" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 46 Lessons)</span><span class="showing-eight">(Showing 8 of 46 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount1 videoCountSingleLong " data-hash="exploring-theories" data-title="Exploring Theories" data-url="/series/exploring-theories?ajax=true" id="series_51">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Exploring Theories
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>1 video</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Exploring-theories_hover_col1" class="col1" src="assets/exploring-theories_hover_col1-9d862f486beaba9093c735d9e3e62dd7.png" style="width: 100%; margin-top: 0;" /><img alt="Exploring-theories_hover_col2" class="col2" src="assets/exploring-theories_hover_col2-8ae2fee2ff1f28b2be6ddc4776826ee8.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Exploring Theories
+                        </div>
+                        <div class="expandedBackground"><img alt="Exploring-theories_expanded" src="assets/exploring-theories_expanded-b3f53da189e74e4fa3668a8d06d9127d.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col2 short videoCount10 videoCountShort " data-hash="how-things-work" data-title="How Things Work" data-url="/series/how-things-work?ajax=true" id="series_31">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      How Things Work
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>25 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="How-things-work_hover_col1" class="col1" src="assets/how-things-work_hover_col1-9f35438bbd0e9e0e18d179fc97240319.png" style="width: 100%; margin-top: 0;" /><img alt="How-things-work_hover_col2" class="col2" src="assets/how-things-work_hover_col2-215569c000ede6088d1306cd8755548e.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          How Things Work
+                        </div>
+                        <div class="expandedBackground"><img alt="How-things-work_expanded" src="assets/how-things-work_expanded-eaed8ccae17e11a4e4bfecb79981f646.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/how-things-work" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 25 Lessons)</span><span class="showing-eight">(Showing 8 of 25 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount3 videoCountSingleLong " data-hash="making-the-invisible-visible" data-title="Making the Invisible Visible" data-url="/series/making-the-invisible-visible?ajax=true" id="series_101">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Making the Invisible Visible
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>3 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Making-the-invisible-visible_hover_col1" class="col1" src="assets/making-the-invisible-visible_hover_col1-92d39d8a8308df1f18ba27a1fbfd5a82.png" style="width: 100%; margin-top: 0;" /><img alt="Making-the-invisible-visible_hover_col2" class="col2" src="assets/making-the-invisible-visible_hover_col2-fef1e9021c8916439468c8d34c9d8250.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Making the Invisible Visible
+                        </div>
+                        <div class="expandedBackground"><img alt="Making-the-invisible-visible_expanded" src="
+                          assets/making-the-invisible-visible_expanded-98188c89b9573e1adc21eec05bc5791e.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col2 short videoCount10 videoCountShort " data-hash="playing-with-language" data-title="Playing with Language" data-url="/series/playing-with-language?ajax=true" id="series_41">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Playing with Language
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>12 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Playing-with-language_hover_col1" class="col1" src="assets/playing-with-language_hover_col1-61cf7b558b777b476100750c06a52b00.png" style="width: 100%; margin-top: 0;" /><img alt="Playing-with-language_hover_col2" class="col2" src="assets/playing-with-language_hover_col2-3b1f66ca05484f8fbdc53307128917ac.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Playing with Language
+                        </div>
+                        <div class="expandedBackground"><img alt="Playing-with-language_expanded" src="assets/playing-with-language_expanded-635c50288da20a035b03e5b89b769ff8.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/playing-with-language" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 12 Lessons)</span><span class="showing-eight">(Showing 8 of 12 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount3 videoCountSingleLong " data-hash="ingenuity-in-the-developing-world" data-title="Ingenuity in the Developing World" data-url="/series/ingenuity-in-the-developing-world?ajax=true" id="series_61">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Ingenuity in the Developing World
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>3 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Ingenuity-in-the-developing-world_hover_col1" class="col1" src="assets/ingenuity-in-the-developing-world_hover_col1-bbf3bb35847f1110ed63a2492bd0fc4b.png" style="width: 100%; margin-top: 0;" /><img alt="Ingenuity-in-the-developing-world_hover_col2" class="col2" src="assets/ingenuity-in-the-developing-world_hover_col2-f731ff3c8662f86a97a84ff4b9b5afb5.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Ingenuity in the Developing World
+                        </div>
+                        <div class="expandedBackground"><img alt="Ingenuity-in-the-developing-world_expanded" src="assets/ingenuity-in-the-developing-world_expanded-089ab7edf5cc2f1496178f5bb2e61fc1.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col2 short videoCount10 videoCountShort " data-hash="awesome-nature" data-title="Awesome Nature" data-url="/series/awesome-nature?ajax=true" id="series_1">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Awesome Nature
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>74 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Awesome-nature_hover_col1" class="col1" src="assets/awesome-nature_hover_col1-167ab03d30347537c8aaec6f51ce7ff5.png" style="width: 100%; margin-top: 0;" /><img alt="Awesome-nature_hover_col2" class="col2" src="assets/awesome-nature_hover_col2-1aa460126a346350d20c24b58bf357b5.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Awesome Nature
+                        </div>
+                        <div class="expandedBackground"><img alt="Awesome-nature_expanded" src="assets/awesome-nature_expanded-00dbdf55743bc4205464f2b7c261fab1.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/awesome-nature" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 74 Lessons)</span><span class="showing-eight">(Showing 8 of 74 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="cyber-influence-power" data-title="Cyber-Influence &amp; Power" data-url="/series/cyber-influence-power?ajax=true" id="series_91">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Cyber-Influence &amp; Power
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>10 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Cyber-influence-power_hover_col1" class="col1" src="assets/cyber-influence-power_hover_col1-9d862f486beaba9093c735d9e3e62dd7.png" style="width: 100%; margin-top: 0;" /><img alt="Cyber-influence-power_hover_col2" class="col2" src="assets/cyber-influence-power_hover_col2-8ae2fee2ff1f28b2be6ddc4776826ee8.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Cyber-Influence &amp; Power
+                        </div>
+                        <div class="expandedBackground"><img alt="Cyber-influence-power_expanded" src="assets/cyber-influence-power_expanded-b3f53da189e74e4fa3668a8d06d9127d.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/cyber-influence-power" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 10 Lessons)</span><span class="showing-eight">(Showing 8 of 10 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount7 videoCount " data-hash="you-graduated-now-what" data-title="You Graduated ... Now What?" data-url="/series/you-graduated-now-what?ajax=true" id="series_141">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      You Graduated ... Now What?
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>7 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="You-graduated-now-what_hover_col1" class="col1" src="assets/you-graduated-now-what_hover_col1-1c1373c4d98cffae696087f82bbf875f.png" style="width: 100%; margin-top: 0;" /><img alt="You-graduated-now-what_hover_col2" class="col2" src="assets/you-graduated-now-what_hover_col2-34c344ca569aba0af261d08393047862.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          You Graduated ... Now What?
+                        </div>
+                        <div class="expandedBackground"><img alt="You-graduated-now-what_expanded" src="assets/you-graduated-now-what_expanded-46ff20409e9d747fcb2edf51c4793392.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount6 videoCountLong " data-hash="what-will-you-do-with-your-life" data-title="What Will You Do with Your Life?" data-url="/series/what-will-you-do-with-your-life?ajax=true" id="series_151">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      What Will You Do with Your Life?
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>6 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="What-will-you-do-with-your-life_hover_col1" class="col1" src="assets/what-will-you-do-with-your-life_hover_col1-19e6c78099b17f8cd81da7471600359e.png" style="width: 100%; margin-top: 0;" /><img alt="What-will-you-do-with-your-life_hover_col2" class="col2" src="assets/what-will-you-do-with-your-life_hover_col2-d97d458efd656b369f6808af8e3860b6.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          What Will You Do with Your Life?
+                        </div>
+                        <div class="expandedBackground"><img alt="What-will-you-do-with-your-life_expanded" src="assets/what-will-you-do-with-your-life_expanded-e5f1f28fbb622f91992894b5e4219eb3.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 long videoCount1 videoCountSingleLong " data-hash="things-they-don-t-teach-in-school-but-should" data-title="Things They Don&#39;t Teach in School (But Should)" data-url="/series/things-they-don-t-teach-in-school-but-should?ajax=true" id="series_81">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Things They Don&#39;t Teach in School (But Should)
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>1 video</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Blue_hover_col1" class="col1" src="assets/blue_hover_col1-8f4185657b3efac5ef7fa5244aa17d20.png" style="width: 100%; margin-top: 0;" /><img alt="Blue_hover_col2" class="col2" src="assets/blue_hover_col2-e266332b807c49791ee740a87b74a45c.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Things They Don&#39;t Teach in School (But Should)
+                        </div>
+                        <div class="expandedBackground"><img alt="Blue_expanded" src="assets/blue_expanded-cc8f2dd3c768e192506f387e088e900b.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col2 short videoCount10 videoCountShort " data-hash="the-world-s-people-and-places" data-title="The World&#39;s People and Places" data-url="/series/the-world-s-people-and-places?ajax=true" id="series_181">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      The World&#39;s People and Places
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>30 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Pink_hover_col1" class="col1" src="assets/pink_hover_col1-afccfa25c2a07eada12097a6c80354b8.png" style="width: 100%; margin-top: 0;" /><img alt="Pink_hover_col2" class="col2" src="assets/pink_hover_col2-9d6f2f491dd43ad85d7bdd7c077d43f9.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          The World&#39;s People and Places
+                        </div>
+                        <div class="expandedBackground"><img alt="Pink_expanded" src="assets/pink_expanded-f73229a4f8548d114fab31e77563751f.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/the-world-s-people-and-places" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 30 Lessons)</span><span class="showing-eight">(Showing 8 of 30 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="government-declassified" data-title="Government: Declassified" data-url="/series/government-declassified?ajax=true" id="series_191">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Government: Declassified
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>32 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Yellow_hover_col1" class="col1" src="assets/yellow_hover_col1-49ce94ed996b0e9ca3bdc1b5ef9825c5.png" style="width: 100%; margin-top: 0;" /><img alt="Yellow_hover_col2" class="col2" src="assets/yellow_hover_col2-5919f1581f7063b4f71a5a62c076bc97.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Government: Declassified
+                        </div>
+                        <div class="expandedBackground"><img alt="Yellow_expanded" src="assets/yellow_expanded-c95452a9a97555745f95d7f9b3a3be8c.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/government-declassified" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 32 Lessons)</span><span class="showing-eight">(Showing 8 of 32 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="out-of-this-world" data-title="Out of This World" data-url="/series/out-of-this-world?ajax=true" id="series_201">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Out of This World
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>36 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Grey_hover_col1" class="col1" src="assets/grey_hover_col1-bdbed51890ff3f476be42151d854e2bd.png" style="width: 100%; margin-top: 0;" /><img alt="Grey_hover_col2" class="col2" src="assets/grey_hover_col2-3b9051933289c379da5d28896e6a8127.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Out of This World
+                        </div>
+                        <div class="expandedBackground"><img alt="Grey_expanded" src="assets/grey_expanded-ec93ca8cbd7e19282909b50647725064.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/out-of-this-world" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 36 Lessons)</span><span class="showing-eight">(Showing 8 of 36 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="getting-under-our-skin" data-title="Getting Under Our Skin" data-url="/series/getting-under-our-skin?ajax=true" id="series_211">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Getting Under Our Skin
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>56 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Blue_hover_col1" class="col1" src="assets/blue_hover_col1-8f4185657b3efac5ef7fa5244aa17d20.png" style="width: 100%; margin-top: 0;" /><img alt="Blue_hover_col2" class="col2" src="assets/blue_hover_col2-e266332b807c49791ee740a87b74a45c.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Getting Under Our Skin
+                        </div>
+                        <div class="expandedBackground"><img alt="Blue_expanded" src="assets/blue_expanded-cc8f2dd3c768e192506f387e088e900b.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/getting-under-our-skin" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 56 Lessons)</span><span class="showing-eight">(Showing 8 of 56 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="before-and-after-einstein" data-title="Before and After Einstein" data-url="/series/before-and-after-einstein?ajax=true" id="series_221">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Before and After Einstein
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>36 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Pink_hover_col1" class="col1" src="assets/pink_hover_col1-afccfa25c2a07eada12097a6c80354b8.png" style="width: 100%; margin-top: 0;" /><img alt="Pink_hover_col2" class="col2" src="assets/pink_hover_col2-9d6f2f491dd43ad85d7bdd7c077d43f9.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Before and After Einstein
+                        </div>
+                        <div class="expandedBackground"><img alt="Pink_expanded" src="assets/pink_expanded-f73229a4f8548d114fab31e77563751f.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/before-and-after-einstein" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 36 Lessons)</span><span class="showing-eight">(Showing 8 of 36 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="actions-and-reactions" data-title="Actions and Reactions" data-url="/series/actions-and-reactions?ajax=true" id="series_231">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Actions and Reactions
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>27 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Grey_hover_col1" class="col1" src="assets/grey_hover_col1-bdbed51890ff3f476be42151d854e2bd.png" style="width: 100%; margin-top: 0;" /><img alt="Grey_hover_col2" class="col2" src="assets/grey_hover_col2-3b9051933289c379da5d28896e6a8127.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Actions and Reactions
+                        </div>
+                        <div class="expandedBackground"><img alt="Grey_expanded" src="assets/grey_expanded-ec93ca8cbd7e19282909b50647725064.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/actions-and-reactions" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 27 Lessons)</span><span class="showing-eight">(Showing 8 of 27 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount9 videoCountShort " data-hash="reading-between-the-lines" data-title="Reading Between the Lines" data-url="/series/reading-between-the-lines?ajax=true" id="series_241">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Reading Between the Lines
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>9 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Yellow_hover_col1" class="col1" src="assets/yellow_hover_col1-49ce94ed996b0e9ca3bdc1b5ef9825c5.png" style="width: 100%; margin-top: 0;" /><img alt="Yellow_hover_col2" class="col2" src="assets/yellow_hover_col2-5919f1581f7063b4f71a5a62c076bc97.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Reading Between the Lines
+                        </div>
+                        <div class="expandedBackground"><img alt="Yellow_expanded" src="assets/yellow_expanded-c95452a9a97555745f95d7f9b3a3be8c.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount3 videoCountSingleLong " data-hash="click-your-fortune" data-title="Click Your Fortune" data-url="/series/click-your-fortune?ajax=true" id="series_255">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Click Your Fortune
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>3 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Pink_hover_col1" class="col1" src="assets/pink_hover_col1-afccfa25c2a07eada12097a6c80354b8.png" style="width: 100%; margin-top: 0;" /><img alt="Pink_hover_col2" class="col2" src="assets/pink_hover_col2-9d6f2f491dd43ad85d7bdd7c077d43f9.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Click Your Fortune
+                        </div>
+                        <div class="expandedBackground"><img alt="Pink_expanded" src="assets/pink_expanded-f73229a4f8548d114fab31e77563751f.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="the-writer-s-workshop" data-title="The Writer&#39;s Workshop" data-url="/series/the-writer-s-workshop?ajax=true" id="series_242">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      The Writer&#39;s Workshop
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>17 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Making-the-invisible-visible_hover_col1" class="col1" src="assets/making-the-invisible-visible_hover_col1-92d39d8a8308df1f18ba27a1fbfd5a82.png" style="width: 100%; margin-top: 0;" /><img alt="Making-the-invisible-visible_hover_col2" class="col2" src="assets/making-the-invisible-visible_hover_col2-fef1e9021c8916439468c8d34c9d8250.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          The Writer&#39;s Workshop
+                        </div>
+                        <div class="expandedBackground"><img alt="Making-the-invisible-visible_expanded" src="assets/making-the-invisible-visible_expanded-98188c89b9573e1adc21eec05bc5791e.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/the-writer-s-workshop" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 17 Lessons)</span><span class="showing-eight">(Showing 8 of 17 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="troubleshooting-the-world" data-title="Troubleshooting the World" data-url="/series/troubleshooting-the-world?ajax=true" id="series_243">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Troubleshooting the World
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>34 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="How-things-work_hover_col1" class="col1" src="assets/how-things-work_hover_col1-9f35438bbd0e9e0e18d179fc97240319.png" style="width: 100%; margin-top: 0;" /><img alt="How-things-work_hover_col2" class="col2" src="assets/how-things-work_hover_col2-215569c000ede6088d1306cd8755548e.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Troubleshooting the World
+                        </div>
+                        <div class="expandedBackground"><img alt="How-things-work_expanded" src="assets/how-things-work_expanded-eaed8ccae17e11a4e4bfecb79981f646.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/troubleshooting-the-world" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 34 Lessons)</span><span class="showing-eight">(Showing 8 of 34 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="our-changing-climate" data-title="Our Changing Climate" data-url="/series/our-changing-climate?ajax=true" id="series_244">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Our Changing Climate
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>15 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Owl-pink_hover_col1" class="col1" src="assets/owl-pink_hover_col1-afccfa25c2a07eada12097a6c80354b8.png" style="width: 100%; margin-top: 0;" /><img alt="Owl-pink_hover_col2" class="col2" src="assets/owl-pink_hover_col2-9d6f2f491dd43ad85d7bdd7c077d43f9.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Our Changing Climate
+                        </div>
+                        <div class="expandedBackground"><img alt="Owl-pink_expanded" src="assets/owl-pink_expanded-72d4ac388b131d0ea42607c770ed4a33.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/our-changing-climate" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 15 Lessons)</span><span class="showing-eight">(Showing 8 of 15 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="discovering-the-deep" data-title="Discovering the Deep" data-url="/series/discovering-the-deep?ajax=true" id="series_245">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Discovering the Deep
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>16 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Yellow_hover_col1" class="col1" src="assets/yellow_hover_col1-49ce94ed996b0e9ca3bdc1b5ef9825c5.png" style="width: 100%; margin-top: 0;" /><img alt="Yellow_hover_col2" class="col2" src="assets/yellow_hover_col2-5919f1581f7063b4f71a5a62c076bc97.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Discovering the Deep
+                        </div>
+                        <div class="expandedBackground"><img alt="Yellow_expanded" src="assets/yellow_expanded-c95452a9a97555745f95d7f9b3a3be8c.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/discovering-the-deep" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 16 Lessons)</span><span class="showing-eight">(Showing 8 of 16 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="behind-the-curtain" data-title="Behind the Curtain" data-url="/series/behind-the-curtain?ajax=true" id="series_246">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Behind the Curtain
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>15 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Blue_hover_col1" class="col1" src="assets/blue_hover_col1-8f4185657b3efac5ef7fa5244aa17d20.png" style="width: 100%; margin-top: 0;" /><img alt="Blue_hover_col2" class="col2" src="assets/blue_hover_col2-e266332b807c49791ee740a87b74a45c.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Behind the Curtain
+                        </div>
+                        <div class="expandedBackground"><img alt="Blue_expanded" src="assets/blue_expanded-cc8f2dd3c768e192506f387e088e900b.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/behind-the-curtain" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 15 Lessons)</span><span class="showing-eight">(Showing 8 of 15 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="the-artist-s-palette" data-title="The Artist&#39;s Palette" data-url="/series/the-artist-s-palette?ajax=true" id="series_247">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      The Artist&#39;s Palette
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>20 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Yellow_hover_col1" class="col1" src="assets/yellow_hover_col1-49ce94ed996b0e9ca3bdc1b5ef9825c5.png" style="width: 100%; margin-top: 0;" /><img alt="Yellow_hover_col2" class="col2" src="assets/yellow_hover_col2-5919f1581f7063b4f71a5a62c076bc97.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          The Artist&#39;s Palette
+                        </div>
+                        <div class="expandedBackground"><img alt="Yellow_expanded" src="assets/yellow_expanded-c95452a9a97555745f95d7f9b3a3be8c.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/the-artist-s-palette" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 20 Lessons)</span><span class="showing-eight">(Showing 8 of 20 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="the-big-questions" data-title="The Big Questions" data-url="/series/the-big-questions?ajax=true" id="series_248">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      The Big Questions
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>15 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="How-things-work_hover_col1" class="col1" src="assets/how-things-work_hover_col1-9f35438bbd0e9e0e18d179fc97240319.png" style="width: 100%; margin-top: 0;" /><img alt="How-things-work_hover_col2" class="col2" src="assets/how-things-work_hover_col2-215569c000ede6088d1306cd8755548e.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          The Big Questions
+                        </div>
+                        <div class="expandedBackground"><img alt="How-things-work_expanded" src="assets/how-things-work_expanded-eaed8ccae17e11a4e4bfecb79981f646.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/the-big-questions" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 15 Lessons)</span><span class="showing-eight">(Showing 8 of 15 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="mind-matters" data-title="Mind Matters" data-url="/series/mind-matters?ajax=true" id="series_249">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Mind Matters
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>24 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Math-in-real-life_hover_col1" class="col1" src="assets/math-in-real-life_hover_col1-19e6c78099b17f8cd81da7471600359e.png" style="width: 100%; margin-top: 0;" /><img alt="Math-in-real-life_hover_col2" class="col2" src="assets/math-in-real-life_hover_col2-d97d458efd656b369f6808af8e3860b6.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Mind Matters
+                        </div>
+                        <div class="expandedBackground"><img alt="Math-in-real-life_expanded" src="assets/math-in-real-life_expanded-e5f1f28fbb622f91992894b5e4219eb3.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/mind-matters" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 24 Lessons)</span><span class="showing-eight">(Showing 8 of 24 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount8 videoCountShort " data-hash="you-are-what-you-eat" data-title="You Are What You Eat" data-url="/series/you-are-what-you-eat?ajax=true" id="series_250">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      You Are What You Eat
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>8 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Blue_hover_col1" class="col1" src="assets/blue_hover_col1-8f4185657b3efac5ef7fa5244aa17d20.png" style="width: 100%; margin-top: 0;" /><img alt="Blue_hover_col2" class="col2" src="assets/blue_hover_col2-e266332b807c49791ee740a87b74a45c.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          You Are What You Eat
+                        </div>
+                        <div class="expandedBackground"><img alt="Blue_expanded" src="assets/blue_expanded-cc8f2dd3c768e192506f387e088e900b.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="everyone-has-a-story" data-title="Everyone Has a Story" data-url="/series/everyone-has-a-story?ajax=true" id="series_251">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Everyone Has a Story
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>17 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Bicycle-grey_hover_col1" class="col1" src="assets/bicycle-grey_hover_col1-bdbed51890ff3f476be42151d854e2bd.png" style="width: 100%; margin-top: 0;" /><img alt="Bicycle-grey_hover_col2" class="col2" src="assets/bicycle-grey_hover_col2-3b9051933289c379da5d28896e6a8127.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Everyone Has a Story
+                        </div>
+                        <div class="expandedBackground"><img alt="Bicycle-grey_expanded" src="assets/bicycle-grey_expanded-74c71726eadf777379f971a88bd823bd.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/everyone-has-a-story" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 17 Lessons)</span><span class="showing-eight">(Showing 8 of 17 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col1 short videoCount10 videoCountShort " data-hash="mysteries-of-vernacular" data-title="Mysteries of Vernacular" data-url="/series/mysteries-of-vernacular?ajax=true" id="series_252">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Mysteries of Vernacular
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>25 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Ingenuity-in-the-developing-world_hover_col1" class="col1" src="assets/ingenuity-in-the-developing-world_hover_col1-bbf3bb35847f1110ed63a2492bd0fc4b.png" style="width: 100%; margin-top: 0;" /><img alt="Ingenuity-in-the-developing-world_hover_col2" class="col2" src="assets/ingenuity-in-the-developing-world_hover_col2-f731ff3c8662f86a97a84ff4b9b5afb5.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Mysteries of Vernacular
+                        </div>
+                        <div class="expandedBackground"><img alt="Ingenuity-in-the-developing-world_expanded" src="assets/ingenuity-in-the-developing-world_expanded-089ab7edf5cc2f1496178f5bb2e61fc1.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/mysteries-of-vernacular" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 25 Lessons)</span><span class="showing-eight">(Showing 8 of 25 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div class="gridCell col2 short videoCount10 videoCountShort " data-hash="animation-basics" data-title="Animation Basics" data-url="/series/animation-basics?ajax=true" id="series_253">
+                  <div class="gridCellWrapper">
+                    <div class="gridMask"></div>
+                    <div class="gridTitle text-ultralight">
+                      Animation Basics
+                    </div>
+                    <div class="gridVideoCount">
+                      <span>11 videos</span>
+                      <div class="gridCorner"></div>
+                    </div>
+                    <div class="gridBackground">
+                      <div class="bluePaint"><img alt="Blue_hover_col1" class="col1" src="assets/blue_hover_col1-8f4185657b3efac5ef7fa5244aa17d20.png" style="width: 100%; margin-top: 0;" /><img alt="Blue_hover_col2" class="col2" src="assets/blue_hover_col2-e266332b807c49791ee740a87b74a45c.png" style="width: 100%; margin-top: 0;" />
+                      </div>
+                      <div class="backgroundMask"></div>
+                    </div>
+                    <div class="gridCellBorderVertical"></div>
+                    <div class="gridCellBorderHorizontal"></div>
+                    <div class="expandedFooterBackground">
+                      <img alt="Series_expanded_background_footer_sample" src="assets/series_expanded_background_footer_sample-9b7aabbc5f96fb8bb14eca624ac0f355.png" />
+                    </div>
+                    <div class="expandedContent">
+                      <div class="expandedHeader">
+                        <div class="expandedTitle">
+                          Animation Basics
+                        </div>
+                        <div class="expandedBackground"><img alt="Blue_expanded" src="assets/blue_expanded-cc8f2dd3c768e192506f387e088e900b.png" />
+                        </div>
+                      </div>
+                      <div class="expandedVideoContent">
+                        <div class="ninecol fixed last" id="clipBody">
+                          <div class="row"></div>
+                        </div>
+                        <div class="load_more"><a href="/series/animation-basics" class="btn">
+                                    <strong>View Full Series </strong><span class="showing-nine">(Showing 9 of 11 Lessons)</span><span class="showing-eight">(Showing 8 of 11 Lessons)</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=347099038755884";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><div class="modalLogin uiModal uiModalSmaller" data-autoopen="false">
+      <div class="uiModalContents">
+        <div class="uiModalMain clearfix">
+          <div class="row-fluid">
+            <h3 class="header default">
+              Log in to Take or Create a Lesson
+            </h3>
+            <h3 class="header discussion">
+              Log in to participate
+            </h3>
+            <h3 class="header club">
+              Please Log in to Apply
+            </h3>
+            <h3 class="header facilitator">
+              Please Log in to Access Facilitator Resources
+            </h3>
+          </div>
+          <div class="row-fluid">
+            <div class="copy">
+              If you have already logged into ted.com, this will verify your authentication. Upon successfully logging in, you will be returned to this page.
+            </div>
+          </div>
+          <div class="row-fluid buttons">
+            <a href="/users/new" target="_top"><button class="btnGrey left-margin right">Register</button></a><a href="/session" target="_top"><button class="btnGrey right">Log In</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  	
+
+		</div> <!-- End Page Wrapper -->
+
+		<!-- Slide In Menu -->
+</div>
+		<div class="menu-open">
+			<ul>
+				<li><span class="current">HOME</span></li>
+				<li><a class="nav-link" href="/work">WORK</a></li>
+				<li><a class="nav-link" href="/culture">CULTURE</a></li>
+				<li><a class="nav-link" href="/press">PRESS</a></li>
+				<li><a class="nav-link" href="/contact">CONTACT</a></li>
+			</ul>
+
+			<ul class="social-menu hide">
+							<a target="_blank" href="https://www.linkedin.com/company/5001504?trk=tyah&trkInfo=tarId%3A1402973000825%2Ctas%3Aopperman%2Cidx%3A3-1-7">
+								<li class="social linked-in"></li>
+							</a>
+							<a href="#">
+							<li class="social tumblr"></li>
+							</a>
+						</ul>
+		</div>
+
+		<!-- End Slide In Menu -->
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="js/animations.js"></script>
+
+		<script src="js/idx-resp.js"></script>
+		<script>
+		
+		if ( $.browser.msie && $.browser.version < 10 ) {
+			$("div").hide();
+			$( "#notSupported").show();
+		}</script>
+	
+	
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54600140-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="css1/application.js" type="text/javascript"></script><script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-170299-26']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!--Begin comScore Tag-->
+    <script type="text/javascript">
+      var _comscore = _comscore || [];
+      _comscore.push({ c1: "2", c2: "7341760" });
+      (function() {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+      })();
+    </script>
+    <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=7341760&cv=2.0&cj=1"></noscript><!--End comScore Tag-->
+	
+	</body>
+</html>
